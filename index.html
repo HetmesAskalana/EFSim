@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            name="description"
+            content="终末地解密计算器"
+        >
+        <meta name="theme-color" content="#eef2f5">
+        <meta name="color-scheme" content="light dark">
+        <link rel="icon" href="data:,">
+        <script src="/theme.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script>
+            if (window.location.hostname === "efsim.unacas.com") {
+                window.dataLayer = window.dataLayer || [];
+                window.gtag = function () { window.dataLayer.push(arguments); };
+                window.gtag("js", new Date());
+                window.gtag("config", "G-HC6KV7YZ62");
+
+                const script = document.createElement("script");
+                script.async = true;
+                script.src = "https://www.googletagmanager.com/gtag/js?id=G-HC6KV7YZ62";
+                document.head.appendChild(script);
+            }
+        </script>
+        <title>终末地解密计算器</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>

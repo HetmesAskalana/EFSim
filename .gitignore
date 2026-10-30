@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+
+# Build output and caches
+dist/
+dist-ssr/
+.vite/
+.npm-cache/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Local environment files
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.local
+
+# Agent configuration and instructions
+AGENTS.md
+AGENTS.override.md
+CLAUDE.md
+CLAUDE.local.md
+GEMINI.md
+.agents/
+.codex/
+.claude/
+.gemini/
+.cursor/
+.cursorrules
+.cursorignore
+.github/copilot-instructions.md
+.github/agents/
+.github/instructions/
+
+# Editor and operating system files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

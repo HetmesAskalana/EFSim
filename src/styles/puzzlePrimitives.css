@@ -1,0 +1,38 @@
+:root {
+    --puzzle-cell-empty-surface: #ffffff;
+    --puzzle-cell-empty-line: #dce2e8;
+    --puzzle-cell-empty-ink: #8793a1;
+    --puzzle-cell-empty-inset: inset 0 1px 0 rgb(255 255 255 / 68%);
+}
+
+html[data-theme="dark"] {
+    --puzzle-cell-empty-surface: #263238;
+    --puzzle-cell-empty-line: #46565d;
+    --puzzle-cell-empty-ink: #b8c0c4;
+    --puzzle-cell-empty-inset: inset 0 1px 0 rgb(255 255 255 / 5%);
+}
+
+.puzzle-cell {
+    position: relative;
+    display: grid;
+    width: var(--cell-size);
+    height: var(--cell-size);
+    place-items: center;
+    padding: 0;
+    overflow: hidden;
+    border: var(--puzzle-cell-border-width, 1px) solid var(--puzzle-cell-empty-line);
+    border-radius: var(--puzzle-cell-radius, 8px);
+    cursor: pointer;
+    touch-action: manipulation;
+    transition:
+        transform 100ms ease,
+        border-color 180ms ease,
+        background-color 180ms ease,
+        box-shadow 160ms ease;
+}
+
+.puzzle-cell--empty {
+    background: var(--puzzle-cell-empty-surface);
+    color: var(--puzzle-cell-empty-ink);
+    box-shadow: var(--puzzle-cell-empty-inset);
+}
